@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".About">
+
+    <ImageView
+        android:id="@+id/calc"
+        android:layout_width="217dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logor" />
+
+    <ImageView
+        android:id="@+id/gmailb"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/webb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc"
+        app:srcCompat="@drawable/gmailb" />
+
+    <ImageView
+        android:id="@+id/webb"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/linkb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gmailb"
+        app:srcCompat="@drawable/websiteb" />
+
+    <ImageView
+        android:id="@+id/linkb"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/igb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webb"
+        app:srcCompat="@drawable/linkb" />
+
+    <ImageView
+        android:id="@+id/igb"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/githubb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkb"
+        app:srcCompat="@drawable/igb" />
+
+    <ImageView
+        android:id="@+id/githubb"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/igb"
+        app:srcCompat="@drawable/githubb" />
+
+    <ImageView
+        android:id="@+id/feedback"
+        android:layout_width="350dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/githubb"
+        app:srcCompat="@drawable/feedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

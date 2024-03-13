@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PalePink"
+    tools:context=".EmergencyNumbers">
+
+    <ImageView
+        android:id="@+id/police"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/child"
+        app:layout_constraintEnd_toStartOf="@+id/ambulance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/police" />
+
+    <ImageView
+        android:id="@+id/ambulance"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/women"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/police"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ambulance" />
+
+    <ImageView
+        android:id="@+id/child"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/lpg"
+        app:layout_constraintEnd_toStartOf="@+id/women"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/police"
+        app:srcCompat="@drawable/child" />
+
+    <ImageView
+        android:id="@+id/women"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/women"
+        app:layout_constraintBottom_toTopOf="@+id/anticorr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/child"
+        app:layout_constraintTop_toBottomOf="@+id/ambulance" />
+
+    <ImageView
+        android:id="@+id/lpg"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cyber"
+        app:layout_constraintEnd_toStartOf="@+id/anticorr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/child"
+        app:srcCompat="@drawable/lpg" />
+
+    <ImageView
+        android:id="@+id/anticorr"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/disaster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lpg"
+        app:layout_constraintTop_toBottomOf="@+id/women"
+        app:srcCompat="@drawable/anticorruption" />
+
+    <ImageView
+        android:id="@+id/cyber"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/disaster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lpg"
+        app:srcCompat="@drawable/cybercrime" />
+
+    <ImageView
+        android:id="@+id/disaster"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cyber"
+        app:layout_constraintTop_toBottomOf="@+id/anticorr"
+        app:srcCompat="@drawable/disaster" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
