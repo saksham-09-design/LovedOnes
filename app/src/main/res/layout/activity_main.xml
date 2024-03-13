@@ -50,10 +50,31 @@
         android:autoSizeMinTextSize="20sp"
         android:autoSizeMaxTextSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/emergencyno"
+        app:layout_constraintBottom_toTopOf="@+id/safetytips"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messagebox"
+        tools:ignore="UnusedAttribute" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/safetytips"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button1"
+        android:text="Safety Tips"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeMaxTextSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/emergencyno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addlovedones"
         tools:ignore="UnusedAttribute" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -74,7 +95,7 @@
         app:layout_constraintBottom_toTopOf="@+id/about"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addlovedones"
+        app:layout_constraintTop_toBottomOf="@+id/safetytips"
         tools:ignore="UnusedAttribute" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -82,7 +103,7 @@
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="15dp"
         android:autoSizeMaxTextSize="30sp"
@@ -105,7 +126,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="15dp"
         android:autoSizeMaxTextSize="30sp"
         android:autoSizeMinTextSize="20sp"
         android:background="@drawable/button1"
@@ -123,7 +144,7 @@
         android:id="@+id/messagebox"
         android:layout_width="350dp"
         android:layout_height="48dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/button1"

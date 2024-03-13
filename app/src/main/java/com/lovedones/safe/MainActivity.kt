@@ -1,5 +1,6 @@
 package com.lovedones.safe
 
+
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.NotificationManager
@@ -39,6 +40,14 @@ class MainActivity : AppCompatActivity() {
         about()
         emergencyNumber()
         help()
+        safetytips()
+    }
+    private fun safetytips(){
+        val safe = binding.safetytips
+        safe.setOnClickListener {
+            val intent = Intent(this, safetytips::class.java)
+            startActivity(intent)
+        }
     }
     private fun help(){
         val hel = binding.help
