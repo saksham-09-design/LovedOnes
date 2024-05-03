@@ -202,6 +202,18 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        but.setOnLongClickListener {
+            val sharedPreference = getSharedPreferences("Number", MODE_PRIVATE)
+            val num1 = sharedPreference.getLong("no1",101).toString()
+            if(num1 != "101"){
+                val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$num1"))
+                startActivity(intent)
+                toastShow("Emergency Call Started to $num1.")
+            } else{
+                toastShow("Please Add Numbers First.")
+            }
+            true
+        }
     }
     private fun sendSMS(phoneNumber: String, message: String) {
         try {

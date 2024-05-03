@@ -26,6 +26,7 @@
             android:justificationMode="inter_word"
             android:text="This is your first line of defense, and it's crucial to stay alert at all times. Familiar places can still pose risks. Whether it's your neighborhood, your favorite market, or your regular route, always stay vigilant."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -56,6 +57,7 @@
             android:justificationMode="inter_word"
             android:text="Life in India is bustling and hectic, making it easy to lose focus. Whether you're walking, driving, or simply going about your day, it's common to see people engrossed in their phones, unaware of their surroundings. Avoid distractions like wearing earbuds, as they prevent you from hearing what's happening around you."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -86,6 +88,7 @@
             android:justificationMode="inter_word"
             android:text="We're all gifted with intuition, often referred to as our sixth sense. Trust your gut feeling – if something feels off, it probably is. If you sense danger or suspicious behavior, report it immediately. It's better to be cautious than to regret not acting sooner."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -116,6 +119,7 @@
             android:justificationMode="inter_word"
             android:text="Avoid walking alone, especially after dark. If you must, stick to well-lit areas or carry a reliable flashlight."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -146,6 +150,7 @@
             android:justificationMode="inter_word"
             android:text="When walking alone, carry self-defense tools like pepper spray or a personal alarm. Keep them easily accessible."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -177,6 +182,7 @@
             android:justificationMode="inter_word"
             android:text="Keep valuable items like your phone and jewelry hidden while out and about to avoid attracting unwanted attention."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -215,6 +221,7 @@
 \n\u25CF Keep your belongings out of sight and your doors locked.
 \n\u25CF Consider installing blind spot mirrors for added safety."
             android:layout_marginTop="5dp"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
@@ -229,5 +236,131 @@
             android:layout_marginEnd="50dp"
             android:src="@drawable/car" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay Connected"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/NavyBlue"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Keep your phone charged and inform someone you trust about your whereabouts. Pre-dial 112 for emergencies. In case you know that you may be in trouble then click on the emergency button on the app for safe alert message to your LovedOne's."
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/emer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Handling Harassment or Attacks"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/NavyBlue"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="\u25CF Project confidence and seek help loudly in public spaces."
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/shout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="\u25CF Escape is your priority – scream and run if threatened."
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/run" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="\u25CF Fight back fiercely if necessary, prioritizing your safety."
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/attack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="\u25CF Refuse to comply with attackers' demands, even under threat. Don't believe assurances of safety from attackers – trust your instincts."
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/faceatt" />
     </LinearLayout>
 </ScrollView>
