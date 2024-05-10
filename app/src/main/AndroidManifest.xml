@@ -7,6 +7,7 @@
         android:name="android.hardware.telephony"
         android:required="false" />
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -28,6 +29,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LovedOnes"
         tools:targetApi="31">
+
+        <receiver
+            android:name=".EmBut"
+            android:label="My Widget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="app.com.example.ACTION_BUTTON_CLICK" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/em_but_info" />
+        </receiver>
+
         <activity
             android:name=".safetytips"
             android:exported="false" />

@@ -1,0 +1,9 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btclk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="HELP"
+    android:textStyle="bold"
+    android:backgroundTint="@color/Red"
+    android:textColor="@color/white"
+    android:textSize="45dp"/>

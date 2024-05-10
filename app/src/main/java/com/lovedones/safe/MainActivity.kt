@@ -234,3 +234,4 @@ class MainActivity : AppCompatActivity() {
         toastShow("Phone Set to Silent Mode")
     }
 }
+
