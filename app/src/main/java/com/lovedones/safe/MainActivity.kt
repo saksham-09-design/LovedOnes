@@ -1,6 +1,5 @@
 package com.lovedones.safe
 
-
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.NotificationManager
@@ -19,12 +18,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.lovedones.safe.databinding.ActivityMainBinding
 import androidx.core.content.ContextCompat
+import androidx.work.PeriodicWorkRequest
+import androidx.work.WorkManager
 import com.google.android.gms.location.*
-
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
     companion object {
-        private const val PERMISSION_REQUEST_SEND_SMS = 123
+        const val PERMISSION_REQUEST_SEND_SMS = 123
     }
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
         super.onCreate(savedInstanceState)
+        val dailyWorkRequest = PeriodicWorkRequest.Builder(DailyNotificationWorker::class.java, 12, TimeUnit.HOURS).build()
+        WorkManager.getInstance(this).enqueue(dailyWorkRequest)
         setContentView(binding.root)
         emergency()
         addLovedOne()
@@ -234,4 +237,3 @@ class MainActivity : AppCompatActivity() {
         toastShow("Phone Set to Silent Mode")
     }
 }
-

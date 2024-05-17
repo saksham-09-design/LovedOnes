@@ -32,12 +32,13 @@
 
         <receiver
             android:name=".EmBut"
-            android:label="My Widget"
-            android:exported="true">
+            android:exported="true"
+            android:label="My Widget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="app.com.example.ACTION_BUTTON_CLICK" />
             </intent-filter>
+
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/em_but_info" />
